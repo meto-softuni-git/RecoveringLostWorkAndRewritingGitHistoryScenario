@@ -26,6 +26,8 @@ git log --oneline
 git push -u --force-with-lease origin main
 git checkout main
 git merge development
+git log --oneline --graph --all
+git branch -d development
 
 
 
