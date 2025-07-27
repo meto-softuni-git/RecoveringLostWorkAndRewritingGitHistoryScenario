@@ -18,6 +18,16 @@ git reset --hard HEAD~1
 git log --oneline
 git remote add origin https://github.com/meto-softuni-git/RecoveringLostWorkAndRewritingGitHistoryScenario.git
 git push -u --force origin main
+git reflog
+git reset --hard HEAD@{1}
+git rebase origin/main -i
+git commit --amend -m "Updated commit message for development feature"
+git log --oneline
+git push -u --force-with-lease origin main
+git checkout main
+git merge development
+
+
 
 
 
